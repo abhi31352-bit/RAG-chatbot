@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  /* Keep a long word or URL from stretching a chat bubble past the viewport. */
+  .break-anywhere {
+    overflow-wrap: anywhere;
+  }
+}

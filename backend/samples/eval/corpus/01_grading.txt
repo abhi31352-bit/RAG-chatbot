@@ -1,0 +1,99 @@
+CS 401 Machine Learning — Grade Breakdown
+=========================================
+
+This document sets out exactly how your final grade in CS 401 is computed.
+Every component, its weight, and the rules that apply to it are listed below.
+If anything here is unclear, raise it with the teaching staff before the first
+assessment rather than after the grade is released.
+
+
+1. Component weights
+--------------------
+
+The course grade is a weighted sum of five components. The weights are fixed
+for the whole term and are not adjusted for individual students.
+
+  Final written examination ............ 40 percent
+  Term project ........................ 30 percent
+  Homework assignments (10 of them) ... 20 percent
+  Midterm examination .................. 10 percent
+  Participation and attendance ........  0 percent
+
+Homework is graded per assignment and then averaged across the ten
+assignments, so a single weak week does not dominate the homework component.
+The midterm is a single sitting in week 7 and covers material from weeks 1
+through 6. The final examination is a single sitting in the last week of
+term and is cumulative, covering all material from the whole course.
+
+
+2. The grade calculation
+------------------------
+
+Your final letter grade is computed from the weighted percentage using the
+scale below. There is no rounding at any intermediate step; the weighted
+percentage is carried to two decimal places and then mapped to a letter.
+
+  93.00 and above ........ A
+  90.00 to 92.99 ......... A-
+  87.00 to 89.99 ......... B+
+  83.00 to 86.99 ......... B
+  80.00 to 82.99 ......... B-
+  77.00 to 79.99 ......... C+
+  73.00 to 76.99 ......... C
+  70.00 to 72.99 ......... C-
+  below 70.00 ............ F
+
+The course does not apply a curve. The scale above is the scale used.
+
+
+3. Late work
+------------
+
+Homework submitted after the published deadline loses 10 percent of the
+possible mark for each day it is late. The penalty is applied per calendar
+day, including weekends and holidays, and it caps at 50 percent of the
+possible mark. In other words, work handed in five or more days late receives
+half credit at best.
+
+There is no late penalty on the term project, but the project has hard
+milestone dates instead. Missing a project milestone does not attract a
+percentage penalty; it removes the milestone from the project score entirely.
+The project is scored out of 100 points across four milestones, so losing one
+milestone costs 25 points of the project component.
+
+Extensions are granted only for documented medical reasons and only when
+requested before the deadline. Extensions are arranged through the
+department's advising office, not through the teaching staff.
+
+
+4. Exemptions and regrades
+--------------------------
+
+Students who sat a previous offering of CS 401 may apply for an exemption from
+the final examination on the basis of a comparable prior result. Applications
+are considered once, before week 1, and an exemption replaces the examination
+component with a score awarded from the prior transcript. Because the
+examination carries 40 percent of the grade, an exemption has a large effect
+and is not granted lightly.
+
+Regrades for the midterm examination and for individual homework assignments
+may be requested within seven days of the relevant result being posted. A
+regrade request must name a specific question or part, not express general
+disagreement with the marking scheme. Regrades of the final examination are
+handled by the university process and not by the course.
+
+
+5. What is not counted
+---------------------
+
+Attendance at lectures is not graded. The participation component carries zero
+weight and exists only so that teaching staff can record engagement. You can
+miss lectures without affecting your grade, though you remain responsible for
+material covered in them.
+
+Peer review of other students' code is part of the project component and is
+graded. It is worth 10 of the 100 project points. Not submitting peer reviews
+costs those 10 points.
+
+The optional practice problems published each week are not collected and are
+not graded. They exist purely as practice.

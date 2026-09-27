@@ -1,0 +1,45 @@
+CS 401 MACHINE LEARNING
+Spring Term Syllabus
+Instructor: Dr. Elena Vasquez (vasquez@cs401.example.edu)
+
+COURSE GRADING
+
+The final examination accounts for 40 percent of the course grade. Weekly
+problem sets account for 30 percent, the term project accounts for 20 percent,
+and class participation accounts for 10 percent.
+
+Late problem set submissions lose 10 percent of the marks per day, up to a
+maximum penalty of 50 percent. Work submitted more than seven days late is not
+accepted at all.
+
+The lowest of your two midterm scores is dropped when computing the midterm
+component of the grade. There is no make-up exam; if you miss a midterm
+entirely you receive a zero for that exam.
+
+PROJECT
+
+The term project is a group assignment of two or three students. Groups must
+be formed by the end of week three. The project proposal is due at the end of
+week four and is worth five percent of the final course grade as a standalone
+mark. A proposal that is late receives no credit for that component.
+
+The final project report is due at 11:59pm on the last day of the term. Code
+submitted after the deadline will not be evaluated.
+
+STAFF AND CONTACT
+
+Dr. Elena Vasquez is the instructor. Office hours are held on Tuesdays from
+2pm to 4pm in Gates 412, and on Fridays by appointment.
+
+The teaching assistant for CS 401 is Priya Raman, reachable at
+priya.raman@cs401.example.edu. Priya holds an additional office hour on
+Thursdays from 5pm to 6pm in the CS 401 help room, room 214 Gates.
+
+Academic questions should go to the instructor first and to the TA second. The
+TA is not the instructor and cannot make grading exceptions.
+
+ATTENDANCE
+
+Lecture attendance is not taken and is not graded directly, but the material
+examined assumes you have seen each week's lecture. Two unexcused absences from
+a scheduled midterm is grounds for failing the course under university policy.

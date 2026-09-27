@@ -1,0 +1,84 @@
+CS 401 Machine Learning — Teaching Staff, Contact and Office Hours
+===================================================================
+
+Who teaches CS 401, when they are available, and how to reach them. This
+document is the authoritative source for contact information; details change
+term to term and the version in the course site is not kept in sync.
+
+
+1. Instructor
+-------------
+
+Dr. Amara Okonkwo is the instructor of record for CS 401. Dr. Okonkwo writes
+the lectures, sets the examinations, and has final authority over grading
+disputes that cannot be resolved with the teaching assistants.
+
+  Email: a.okonkwo@example.edu
+  Office: Gates Building 512
+  Pronouns: she/her
+
+Dr. Okonkwo holds office hours in Gates 512 and is also reachable by
+appointment. She asks that you email rather than arrive unannounced, because
+she is frequently in meetings during the advertised hours.
+
+
+2. Teaching assistants
+----------------------
+
+Three teaching assistants support CS 401 this term. Each TA owns a group of
+students for questions about assignments and grading.
+
+  Priya Raman ....... priya.raman@example.edu .... Sections 1 and 2
+  Daniel Okoye ...... daniel.okoye@example.edu .... Sections 3 and 4
+  Sofia Marchetti ... s.marchetti@example.edu ..... Sections 5 and 6
+
+Each TA runs one office hour per week in Gates 411. The TA office hours are
+listed in the course site under "Staff". Priya Raman additionally runs a
+Thursday evening session focused on the project, which is open to the whole
+class and not only to her own sections.
+
+
+3. Office hours
+---------------
+
+Instructor office hours are held on Wednesdays from 2pm to 4pm in Gates 512.
+The room booking runs the full two hours; if it is occupied the door sign will
+show an alternative room number in the same building.
+
+TA office hours are held on Tuesdays from 4pm to 6pm in Gates 411, and on
+Fridays from 10am to noon in Gates 411. Daniel Okoye also holds a Monday
+session from 1pm to 3pm in Gates 410 for his sections only.
+
+All office hours are drop-in. You do not need to book a slot, and you do not
+need to prepare anything in advance. If a session is unusually crowded, ask
+for a one-to-one follow-up by email rather than waiting.
+
+
+4. How to get an answer quickly
+-------------------------------
+
+Most questions are answered faster by email than by waiting for office hours,
+because email can be answered outside the advertised window. Include the
+following so the answer can be given in one reply rather than two:
+
+  - the assignment number and the specific question or part number
+  - what you tried, and what you expected to happen instead
+  - whether the question is about the concept or only about the marking
+
+Questions about a grading decision that you believe is wrong should be emailed
+rather than raised in office hours, so that the staff member can look at the
+specific work before replying. Grades are released on the course site, and
+individual marks are not discussed in public or in the group chat.
+
+
+5. Other staff
+--------------
+
+Priya Raman also coordinates the weekly optional practice sessions held on
+Wednesday mornings before the lecture. The sessions are not recorded and are
+not graded.
+
+Questions that concern accommodations, extensions for medical reasons, or
+registration should go to the department advising office rather than to the
+teaching staff, who cannot process them. The advising office handles
+registration changes, withdrawal deadlines, and accommodation letters.

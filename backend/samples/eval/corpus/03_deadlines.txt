@@ -1,0 +1,93 @@
+CS 401 Machine Learning — Project Milestones and Deadlines
+===========================================================
+
+The term project is worth 30 percent of the course grade. It is delivered in
+four milestones, each with a hard date. This document gives the full schedule,
+what is due when, and what happens if a milestone is missed.
+
+
+1. Project structure
+--------------------
+
+The project is a four-person team building a machine learning system. Teams
+are formed in week 2 and may not change after week 3. Each member must
+contribute and each member receives the same project mark; there is no
+individual project grade.
+
+The project is graded out of 100 points across four milestones, worth 25
+points each. There is no late penalty applied to milestones. A milestone that
+is not submitted by its date scores zero for that milestone. This is a
+deliberate design choice: partial credit is granted within a milestone, but a
+missed milestone is a missed milestone.
+
+
+2. Milestone schedule
+---------------------
+
+  Milestone 1 — Topic proposal and literature review
+    Due: end of week 5
+    Points: 25
+    A one-page proposal naming the problem, the dataset you intend to use, and
+    three papers whose techniques you plan to adapt. Also a short risk
+    assessment listing what you think is the hardest part.
+
+  Milestone 2 — Data pipeline and baseline
+    Due: end of week 8
+    Points: 25
+    Working code that loads your dataset, cleans it, and produces a feature
+    representation, plus a baseline model with a reported score on a held-out
+    split. The baseline is expected to be simple.
+
+  Milestone 3 — Model and evaluation
+    Due: end of week 11
+    Points: 25
+    Your proposed model, trained and evaluated. You must report at least three
+    metrics, a confusion matrix, and an ablation showing what each component
+    contributes. A single accuracy number is not sufficient.
+
+  Milestone 4 — Write-up and presentation
+    Due: week 13 lecture, end of week 14
+    Points: 25
+    A report of at most 4000 words, a ten-minute presentation, and a
+    reproducible script that regenerates every number in the report from the
+    raw data.
+
+
+3. Late submission and slippage
+-------------------------------
+
+Milestones have hard dates and no late penalty, but a slipping team can ask
+for an extension once per project. Extensions are approved by the instructor
+only, must be requested before the milestone date, and are granted at most
+once for the whole project. A team that has used its extension and then
+misses another milestone scores zero for that milestone.
+
+Peer review of two other teams' milestone 3 submissions is due at the same
+time as milestone 4. Peer review is worth 10 of the 100 project points, which
+is separate from the four milestones worth 25 each.
+
+
+4. Submission mechanics
+-----------------------
+
+Submissions go through the course site, not by email. Each milestone has a
+single submission slot that closes at 23:59 local time on the date shown. The
+slot does not reopen. Late slots are opened for appeals only.
+
+Each submission must include a single archive containing the report, the code,
+a requirements file pinning your dependencies, and a README giving the exact
+commands needed to reproduce your reported numbers. A submission that cannot
+be reproduced from its own README is marked down under milestone 4, because
+reproducibility is part of what milestone 4 assesses.
+
+Submitted work must be your own. See the academic integrity policy document
+for what is permitted when using external code or assistance.
+
+
+5. Presentation scheduling
+--------------------------
+
+Each team presents during the week 13 lecture slot allocated to it. The slot
+allocation is published in the course site. Teams that miss their allocated
+slot present in the catch-up session in week 14, and a catch-up presentation
+receives no separate credit.

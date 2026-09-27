@@ -1,0 +1,70 @@
+CS 401 Machine Learning — Weekly Schedule
+==========================================
+
+What is covered each week, and what is due. The schedule is fixed for the term
+and is not adjusted for individual sections; all sections cover the same
+material in the same order.
+
+
+Weeks 1 to 7
+------------
+
+  Week 1 ... Supervised learning, linear and logistic regression.
+            Homework 1 released.
+  Week 2 ... Regularisation, overfitting, L1 versus L2, cross-validation.
+            Homework 2 released. Project teams formed.
+  Week 3 ... Gradient descent, learning rates, momentum, SGD variants.
+            Homework 3 released.
+  Week 4 ... Evaluation metrics, precision, recall, F1, imbalanced data.
+            Homework 4 released.
+  Week 5 ... Decision trees, random forests, bagging and boosting.
+            Project milestone 1 due at the end of this week.
+            Homework 5 released.
+  Week 6 ... Clustering, k-means, DBSCAN, choosing the number of clusters.
+            Homework 6 released.
+  Week 7 ... Midterm examination. No lecture; the midterm is in the usual slot.
+
+Homework 7 is released in week 8 and covers weeks 6 and 7. There is no
+homework in the week of the midterm.
+
+
+Weeks 8 to 14
+-------------
+
+  Week 8 ...... Data pipelines and feature engineering. Homework 8 released.
+  Week 9 ...... Neural networks and backpropagation. Homework 9 released.
+  Week 10 ..... Convolutional models. Homework 10 released.
+  Week 11 ..... Project milestone 2 due at the end of this week. No new
+                homework; the week is dedicated to the milestone.
+  Week 12 ..... Recurrent models and attention. Guest lecture.
+  Week 13 ..... Project presentations in the allocated lecture slots.
+                Homework 11 released.
+  Week 14 ..... Final examination. Catch-up project presentations for teams
+                that missed their allocated slot. Project milestone 4 due.
+
+
+Examinations
+------------
+
+The midterm examination takes place in week 7 and covers weeks 1 to 6
+inclusive. It is a single 90-minute sitting. There is a 10-minute reading time
+before writing begins, which does not count towards the 90 minutes.
+
+The final examination takes place in week 14 and is cumulative, covering the
+whole course including the material from weeks 8 to 12. It is a single
+2-hour sitting, again preceded by a reading time.
+
+
+Notes on the schedule
+---------------------
+
+The guest lecture in week 12 is on attention mechanisms and is assessed. The
+lecturer for that week is not the course instructor, but the material is
+examinable and the notes are provided like any other week.
+
+There is no lecture in week 14. The final examination occupies the usual slot
+and the catch-up presentations run in the afternoon.
+
+The schedule leaves weeks 11 and 13 free of new homework so that milestone and
+presentation work is possible. This is a firm arrangement and the homework
+deadlines do not move to accommodate the project.

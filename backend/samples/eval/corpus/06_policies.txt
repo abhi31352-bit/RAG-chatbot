@@ -1,0 +1,95 @@
+CS 401 Machine Learning — Course Policies
+=========================================
+
+Attendance, conduct, use of external tools, and accommodations. These policies
+apply to every student in the course regardless of section.
+
+
+1. Attendance
+-------------
+
+Lectures are not recorded and attendance is not taken for grading purposes.
+The participation component of the grade carries zero weight, so missing a
+lecture has no effect on your mark.
+
+You remain responsible for everything covered in a lecture you miss. Slides
+are posted after each lecture, but the slides are an outline and the worked
+examples only exist in the lecture itself.
+
+Tutorials are also optional. The weekly practice sessions are optional and
+ungraded.
+
+
+2. Academic integrity
+--------------------
+
+The work you submit must be your own. The following are permitted:
+
+  - discussing the ideas behind an assignment with other students
+  - reading documentation, tutorials, and reference implementations
+  - using a search engine to look up a concept you do not understand
+  - asking a teaching assistant or the instructor for help
+
+The following are not permitted:
+
+  - submitting code or written answers produced by another student
+  - sharing your submission with another student, in any form
+  - giving code or answers to another student, in any form
+  - presenting work you did not do as your own in the project report
+
+Discussing an assignment with another student is permitted. Submitting their
+answer is not. The distinction is about what you hand in, not about what you
+talked about beforehand.
+
+
+3. Use of generative AI tools
+-----------------------------
+
+Use of large language model assistants is permitted in this course, under
+conditions. The rules are specific:
+
+You may use an AI assistant to explain a concept, to generate ideas, to
+debug your own code, and to improve the clarity of prose you have already
+written. You may not use an assistant to produce a solution to an assessed
+problem and submit it, and you may not use one to write your project report.
+
+If you use an assistant at all on an assessed piece of work, you must say so in
+a one-line comment at the top of the file, naming the tool and the stage at
+which you used it. This is a disclosure requirement, not a permission
+requirement. Failing to disclose use is treated as misconduct; disclosing it
+is never itself penalised.
+
+The reason for the disclosure rule is that the course is partly assessing
+whether you can do the work unaided. A solution you could not have produced
+unaided does not demonstrate that you have learned anything.
+
+
+4. Accommodations
+-----------------
+
+Students with a disability that affects assessment should arrange
+accommodations through the department advising office, well before the first
+assessment. Accommodations include additional time, a separate room, and
+alternative assessment formats.
+
+Accommodations are arranged with the advising office and not with the teaching
+staff, who cannot process them. Letters must be in place before the midterm in
+week 7, and the advising office needs several weeks of notice to arrange a
+separate room.
+
+Tell the teaching staff about an accommodation as soon as it is confirmed so
+that marking arrangements can be planned, but the paperwork itself goes to the
+advising office.
+
+
+5. Withdrawal and deadlines
+---------------------------
+
+The standard university withdrawal deadline applies. Withdrawal after that
+deadline requires documented grounds and is at the discretion of the department.
+
+Adding and dropping the course during the add-drop period has no academic
+consequences. After the add-drop period the course appears on your transcript
+with a grade, including an F.
+
+There is no penalty for withdrawing before the project is due.

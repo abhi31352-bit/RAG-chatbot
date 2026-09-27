@@ -1,0 +1,169 @@
+{
+  "description": "Answer key for scripts/eval_retrieval.py. Each question names the document that should be retrieved and the strings that prove the answer actually landed in the top chunk. `difficulty` splits verbatim questions, which reuse the document's own vocabulary, from paraphrased ones, which deliberately do not -- the local embedder is a hashed bag of words, so the gap between the two columns is the measurement that matters.",
+  "corpus": "samples/eval/corpus",
+  "questions": [
+    {
+      "question": "How much of the final grade does the final written examination count for?",
+      "expect_document": "01_grading.txt",
+      "expect_keywords": ["40 percent"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "How much is late homework penalised per day?",
+      "expect_document": "01_grading.txt",
+      "expect_keywords": ["10 percent"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Does the course apply a curve to the grades?",
+      "expect_document": "01_grading.txt",
+      "expect_keywords": ["does not apply a curve"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Who is the teaching assistant for sections 1 and 2?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["Priya Raman"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "What are the instructor office hours on Wednesdays?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["Wednesdays", "2pm"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "What is Dr. Okonkwo's email address and office?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["a.okonkwo", "Gates Building 512"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "When is project milestone 1 due?",
+      "expect_document": "03_deadlines.txt",
+      "expect_keywords": ["end of week 5"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "How many points is each project milestone worth?",
+      "expect_document": "03_deadlines.txt",
+      "expect_keywords": ["25 points"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Can I submit a regrade request for the final examination?",
+      "expect_document": "04_assessment_mechanics.txt",
+      "expect_keywords": ["appeals process", "university appeals"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Is partial credit awarded on the final examination?",
+      "expect_document": "04_assessment_mechanics.txt",
+      "expect_keywords": ["Partial credit is awarded generously"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "What is the difference between L1 and L2 regularisation?",
+      "expect_document": "05_ml_concepts.md",
+      "expect_keywords": ["sparse", "L1 regularisation"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "When is the midterm examination and what does it cover?",
+      "expect_document": "08_schedule.txt",
+      "expect_keywords": ["week 7", "weeks 1 to 6"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Is there a required textbook for the course?",
+      "expect_document": "07_resources.txt",
+      "expect_keywords": ["no required textbook"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "May I use an AI assistant to write my project report?",
+      "expect_document": "06_policies.txt",
+      "expect_keywords": ["may not use one to write your project report"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "How long is the final examination sitting?",
+      "expect_document": "08_schedule.txt",
+      "expect_keywords": ["2-hour"],
+      "difficulty": "verbatim"
+    },
+    {
+      "question": "Do I need a GPU for the assignments?",
+      "expect_document": "07_resources.txt",
+      "expect_keywords": ["does not require a GPU"],
+      "difficulty": "verbatim"
+    },
+
+    {
+      "question": "What proportion of my overall mark comes from the end of term written test?",
+      "expect_document": "01_grading.txt",
+      "expect_keywords": ["40 percent"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "What do I lose if I hand work in after the deadline?",
+      "expect_document": "01_grading.txt",
+      "expect_keywords": ["10 percent"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "Who can I approach about a problem set in the first two sections?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["Priya Raman"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "Can I turn up to see the lecturer without arranging it first?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["drop-in"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "When do I need to hand in the opening part of my group assignment?",
+      "expect_document": "03_deadlines.txt",
+      "expect_keywords": ["end of week 5"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "If I think my end of term paper was marked unfairly what should I do?",
+      "expect_document": "04_assessment_mechanics.txt",
+      "expect_keywords": ["appeals process", "regrade request"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "Why does one of the two penalty terms delete features while the other shrinks them?",
+      "expect_document": "05_ml_concepts.md",
+      "expect_keywords": ["sparse", "exactly zero"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "Do I have to buy a book for this class?",
+      "expect_document": "07_resources.txt",
+      "expect_keywords": ["no required textbook"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "Is it acceptable to have an automated assistant write my essay for me?",
+      "expect_document": "06_policies.txt",
+      "expect_keywords": ["may not use one to write your project report", "disclosure"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "How much time do I get for the last test of the term?",
+      "expect_document": "08_schedule.txt",
+      "expect_keywords": ["2-hour"],
+      "difficulty": "paraphrased"
+    },
+    {
+      "question": "How do I get in touch with the professor and which room is she in?",
+      "expect_document": "02_staff.txt",
+      "expect_keywords": ["a.okonkwo", "Gates Building 512"],
+      "difficulty": "paraphrased"
+    }
+  ]
+}

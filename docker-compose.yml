@@ -1,0 +1,78 @@
+# Full-stack deployment for the demo.
+#
+#   docker compose up --build       -> frontend on :3000, backend on :8000
+#   docker compose down              -> stop, keeping the data volume
+#   docker compose down -v           -> stop and discard the index
+#
+# No `version:` key. It has been ignored by Compose v2 since 2023 and now only
+# produces a deprecation warning.
+#
+# No `env_file` is required to get a working demo. With no keys the backend
+# starts on its offline extractive responder, so `up` succeeds with nothing
+# configured. Adding `backend/.env` is what switches answers to a real model.
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    # Read the real key file if it exists. `required: false` is the difference
+    # between "the container can start without credentials" and "the container
+    # refuses to start unless you have a key" -- and a demo that will not boot
+    # without a paid API key is a demo that breaks on the wrong network.
+    env_file:
+      - path: ./backend/.env
+        required: false
+    ports:
+      - "8000:8000"
+    environment:
+      # These override anything coming from env_file, because in Compose an
+      # `environment` entry wins. All three paths must be absolute and must
+      # agree, or the app writes its database and vector store to one place and
+      # is told to read another.
+      - DATABASE_URL=sqlite:////app/data/app.db
+      - CHROMA_PERSIST_DIR=/app/data/chroma
+      - UPLOAD_DIR=/app/data/uploads
+      # The browser talks to the backend through nginx on the same origin, so
+      # CORS never applies to the demo path. These origins are here for the
+      # case where someone runs the Vite dev server against the container.
+      - CORS_ORIGINS=["http://localhost:3000","http://localhost:5173"]
+      # Pinned, not inherited. In `auto` a real OPENAI_API_KEY switches the
+      # embedding provider too, changing the vector width and making an
+      # existing index unqueryable. A container that comes up mid-demo with a
+      # 409 on every question is not worth the flexibility. Groq serves no
+      # embedding model, so the demo runs retrieval on the local embedder and
+      # is unaffected by whether a key is present.
+      - EMBEDDING_PROVIDER=local
+    volumes:
+      # A named volume, not a host bind mount. The container's state is then
+      # independent of `backend/data/`, so starting the demo stack cannot
+      # corrupt a local dev index built with a different Python, and vice
+      # versa. It also survives `docker compose down`.
+      - rag-data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        # Not just "started". Ordering on start alone leaves the frontend
+        # proxying to a backend that is still importing chromadb, so the first
+        # request after a cold `up` returns a 502 -- and on a demo machine a
+        # cold start is exactly when the first request happens.
+        condition: service_healthy
+    # The image runs `nginx -t` at build time, so a config error fails the
+    # build rather than the first boot.
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  rag-data:

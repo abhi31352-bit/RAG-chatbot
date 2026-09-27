@@ -1,0 +1,93 @@
+CS 401 Machine Learning — How Assessments Are Marked
+====================================================
+
+This document explains the marking conventions used for every assessed
+component. It is written so that a student can predict the mark for their own
+work before submitting it.
+
+
+1. Examinations
+---------------
+
+Examinations are marked out of 100 and then scaled to the weight of the
+component. The final examination and the midterm examination are both
+hand-marked.
+
+Partial credit is awarded generously on the final examination. A question
+worth 10 points may earn between 0 and 10. There is no negative marking
+anywhere in this course: incorrect work earns zero for that part and nothing
+less. If you demonstrate a correct method with a wrong final number, the
+method marks are still awarded.
+
+The final examination has a short reading time of ten minutes before writing
+begins, which is not counted. You may not begin writing during the reading
+time.
+
+Answers to examination questions are marked anonymously. Do not write your
+name on the script. Scripts with a name on them are held for administrative
+processing and may be returned to you after release of grades, which means you
+cannot see your mark on the day of release.
+
+
+2. Homework assignments
+-----------------------
+
+Each homework assignment is worth 10 points, and the ten assignments together
+form the homework component, which is averaged and then weighted at 20
+percent of the course grade.
+
+Homework marks are published within one week of the submission deadline.
+The published breakdown shows the points for each part, so partial credit is
+visible. Code is marked on correctness first and style second; a correct
+answer written badly still earns most of the marks, and a beautifully written
+incorrect answer earns few.
+
+Test cases provided in the assignment are worth roughly half the marks. Hidden
+test cases, run only after the deadline, are worth the other half. This means
+code that passes only the provided cases can score about 5 of 10.
+
+
+3. Marking the project
+---------------------
+
+The project is marked against the rubric published in the course site, using
+the four milestones described in the project document. Each milestone is
+marked out of 25.
+
+The four team members receive the same project mark. There is no mechanism
+for individual marks within a team, and requests to differentiate team members
+cannot be accommodated. If a team member contributes substantially less than
+the others, the remedy is to tell the instructor before milestone 3, not after
+the mark is released.
+
+
+4. Regrade requests
+-------------------
+
+A regrade request must be submitted within seven days of the relevant result
+being posted, using the regrade form in the course site. The form requires
+you to identify the specific part you are disputing and to say what the
+correct answer should be. "I do not agree with this mark" is not sufficient
+and will be rejected.
+
+Regrade requests are decided by the teaching assistant who set the work, or by
+the instructor for the examinations. You will receive a decision within five
+working days. A regrade may lower a mark as well as raise it, so consider
+carefully before submitting.
+
+Regrades of the final examination follow the university appeals process
+rather than the course process, and the deadline for that is set by the
+registry rather than by the course.
+
+
+5. Academic conduct during assessments
+--------------------------------------
+
+All assessments in this course are individual unless explicitly described as
+a project. Talking to another student during an examination is misconduct, as
+is using a phone or an online resource during a sitting. Devices must be
+powered off and stored away.
+
+The midterm is conducted under the same rules as the final. There is no
+permitted resource for either sitting, and the formula sheet is not provided
+because the course expects you to know the material.

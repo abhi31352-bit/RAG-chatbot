@@ -1,0 +1,35 @@
+# Exclude local state and secrets from the build context.
+#
+# `.env` is the important one: it holds a real API key, and the backend image
+# must never contain it. It is also already excluded from the context by the
+# Dockerfile only copying `requirements.txt` and `app/` -- this file makes that
+# guarantee independent of the Dockerfile continuing to be written that way.
+.env
+.env.*
+!.env.example
+
+# A host virtualenv is built against the host's Python and its own platform
+# wheels. Copying it in would shadow the `pip install` in the image with
+# binaries that cannot execute there, and it is several hundred megabytes.
+venv
+.venv
+venv/
+.venv/
+
+# Runtime state. Mounted as a volume, and a stale host copy would open a
+# SQLite file that was created against a different Python build.
+data/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+tests/
+scripts/
+samples/
+
+Dockerfile
+.dockerignore

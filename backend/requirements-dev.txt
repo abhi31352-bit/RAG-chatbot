@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# Testing
+pytest==8.1.1
+pytest-asyncio==0.23.5
+
+# Linting
+ruff==0.3.4

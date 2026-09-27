@@ -1,0 +1,89 @@
+CS 401 Machine Learning — Resources, Software and Textbooks
+=============================================================
+
+What you need to run the assignments, what to read, and where the data comes
+from. No software purchase is required for this course.
+
+
+1. Software
+-----------
+
+All assignments are written in Python 3.9 or later. A virtual environment is
+created for you and you should work inside it; the course site includes a
+setup script that creates the environment and installs the pinned
+dependencies.
+
+You must use the provided environment rather than a global install. The
+pinned dependency versions matter because results are not reproducible across
+versions of the numerical libraries. NumPy in particular changed its random
+number behaviour in a minor release, and an unpinned environment will silently
+produce different numbers from the ones in the assignment sheets.
+
+The course does not require a GPU. Every assignment in CS 401 runs comfortably
+on a laptop CPU in under a minute.
+
+
+2. Textbooks
+------------
+
+There is no required textbook. The course notes published for each week are the
+primary reference and cover everything assessed.
+
+Two books are recommended as supplementary. "An Introduction to Statistical
+Learning" with its Python edition is free to read online and covers the
+supervised material in weeks 1 to 4 at roughly the depth used in lectures.
+"Pattern Recognition and Machine Learning" by Bishop covers the same ground at
+a considerably greater depth, and its chapters 3 and 4 on linear models and
+regularisation are the clearest treatment available.
+
+The third-year machine learning course has "Deep Learning" by Goodfellow,
+Bengio and Courville on its reading list. It is not required for CS 401 and
+covers material well beyond this course.
+
+
+3. Datasets
+-----------
+
+Assignment datasets are distributed with the assignment and downloaded by the
+setup script from the course server. They are small, a few megabytes each, and
+need no registration or licence agreement.
+
+The datasets used in the term project are chosen by each team. Three public
+repositories are acceptable and cover most tabular and text projects:
+
+  - the UCI Machine Learning Repository, which hosts the classical datasets
+  - OpenML, which serves datasets in a uniform format with reproducible splits
+  - Kaggle, which has the largest selection but requires an account
+
+If you use Kaggle you must confirm the licence permits redistribution, because
+your milestone 4 submission has to be reproducible by the teaching staff.
+
+Any dataset requiring a signed data use agreement cannot be used for the
+project, because the marker cannot access it.
+
+
+4. Computing and storage
+------------------------
+
+The course server provides a shared Jupyter environment that runs all week.
+It is the same environment the graders will use, which removes one class of
+reproducibility problem.
+
+Course server notebooks are saved automatically and are retained for the whole
+term. Do not rely on the server for anything you cannot afford to lose.
+
+The assignment datasets are also placed in a local cache, so a notebook can be
+run offline once the environment has been created.
+
+
+5. Reading beyond the course
+----------------------------
+
+The course notes are sufficient for every assessed topic. If you want more
+depth on a specific item, the lectures reference sections of the supplementary
+texts by chapter, and the readings are collected in the course site under
+"Further reading".
+
+Questions about the readings are welcome in office hours. The teaching staff
+will say if a question is better answered by the textbook than by the notes,
+which happens occasionally for material on the syllabus but not examined.

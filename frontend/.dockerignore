@@ -1,0 +1,20 @@
+# Keep the build context small and, more importantly, keep secrets out of it.
+#
+# `.env` holds a real API key. If it is not excluded here it is copied into the
+# build context, and any future `COPY . .` -- or a careless change to this file
+# -- would bake it into an image layer, where it survives `docker rmi` and is
+# readable by anyone who can pull the image.
+.env
+.env.*
+!.env.example
+
+# Present locally, useless in the image: the dependencies are reinstalled by
+# `npm ci` against the lockfile, and a copied `node_modules` would override it
+# with modules built for the host platform.
+node_modules
+dist
+.vite
+npm-debug.log*
+
+Dockerfile
+.dockerignore

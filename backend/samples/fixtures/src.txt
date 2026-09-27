@@ -1,0 +1,12 @@
+CS 401 MACHINE LEARNING -- COURSE POLICIES (student handbook extract)
+
+The final examination accounts for 40 percent of the course grade. Weekly
+problem sets account for 30 percent, the term project accounts for 20 percent,
+and class participation accounts for 10 percent.
+
+Late problem set submissions lose 10 percent of the marks per day, up to a
+maximum penalty of 50 percent.
+
+The teaching assistant for CS 401 is Priya Raman, reachable at
+priya.raman@cs401.example.edu. Academic questions should go to the instructor
+first and to the TA second.
