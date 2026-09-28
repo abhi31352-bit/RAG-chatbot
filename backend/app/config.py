@@ -157,6 +157,11 @@ class Settings(BaseSettings):
 
     # -- Resolved, absolute paths -------------------------------------------
     @property
+    def backend_dir(self) -> Path:
+        """Absolute path to the backend directory."""
+        return BACKEND_DIR
+
+    @property
     def chroma_path(self) -> str:
         return resolve_path(self.CHROMA_PERSIST_DIR)
 
