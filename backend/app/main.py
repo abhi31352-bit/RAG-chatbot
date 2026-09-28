@@ -53,24 +53,11 @@ app.include_router(documents.router, prefix="/api/documents", tags=["Documents"]
 app.include_router(chat.router, prefix="/api/chat", tags=["Chat"])
 
 
-@app.get("/", tags=["Root"])
-async def root():
-    return {
-        "message": f"{settings.APP_NAME} API is running",
-        "docs": "/docs",
-        "health": "/api/health",
-    }
-
-
-# Serve the built frontend (production deployment on Render)
-# Path resolution order:
-#   1. FRONTEND_DIST environment variable (set this in Render)
-#   2. Relative to backend dir: ../frontend/dist
-_frONTEND_DIST = os.environ.get("FRONTEND_DIST")
-if _FRONTEND_DIST:
-    FRONTEND_DIST = Path(_FRONTEND_DIST)
-else:
-    FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+# Serve the built React/Vite frontend from frontend/dist.
+# On Render, FRONTEND_DIST=../frontend/dist is passed via the start command.
+# Resolve relative to the CWD (backend/) so the path works in any deployment.
+_frontend_dist_env = os.environ.get("FRONTEND_DIST", "../frontend/dist")
+FRONTEND_DIST = Path(_frontend_dist_env).resolve()
 
 if FRONTEND_DIST.is_dir():
     app.mount("/assets", StaticFiles(directory=FRONTEND_DIST / "assets"), name="assets")
@@ -78,6 +65,8 @@ if FRONTEND_DIST.is_dir():
     @app.get("/{full_path:path}", include_in_schema=False)
     async def serve_frontend(full_path: str):
         """Serve the SPA for any non-API route."""
+        # API routes are already registered above and take precedence.
+        # This catch-all only fires for non-API paths.
         file_path = FRONTEND_DIST / full_path
         if file_path.is_file():
             return FileResponse(file_path)
