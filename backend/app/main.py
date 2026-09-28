@@ -3,6 +3,9 @@
 import logging
 from contextlib import asynccontextmanager
 
+import os
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -60,7 +63,15 @@ async def root():
 
 
 # Serve the built frontend (production deployment on Render)
-FRONTEND_DIST = settings.backend_dir.parent / "frontend" / "dist"
+# Path resolution order:
+#   1. FRONTEND_DIST environment variable (set this in Render)
+#   2. Relative to backend dir: ../frontend/dist
+_frONTEND_DIST = os.environ.get("FRONTEND_DIST")
+if _FRONTEND_DIST:
+    FRONTEND_DIST = Path(_FRONTEND_DIST)
+else:
+    FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+
 if FRONTEND_DIST.is_dir():
     app.mount("/assets", StaticFiles(directory=FRONTEND_DIST / "assets"), name="assets")
 
