@@ -16,6 +16,8 @@ greenlet==3.0.3  # required by SQLAlchemy's asyncio support
 
 # Vector Store
 chromadb==0.4.24
+# Pin NumPy to 1.x — chromadb 0.4.24 uses np.float_ which was removed in NumPy 2.0
+numpy==1.26.4
 
 # LLM & Embeddings
 openai==1.14.3

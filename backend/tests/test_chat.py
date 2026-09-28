@@ -21,7 +21,7 @@ class FakeRetriever:
         self.error = error
         self.calls = []
 
-    async def retrieve(self, query, top_k=None):
+    async def retrieve(self, query, top_k=None, memory_context=None):
         self.calls.append((query, top_k))
         if self.error:
             raise self.error
